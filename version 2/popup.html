@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroAdapt Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>NeuroAdapt</h2>
+
+    <label>
+        <input type="checkbox" id="toggleContentFilter"> Enable Content Filter
+    </label>    
+    <label>
+        <input type="checkbox" id="toggleFont"> Enable Dyslexia-Friendly Font
+    </label>
+    <label>
+        <input type="checkbox" id="toggleEmojis"> Add Emojis for Readability
+    </label>
+
+    <hr>
+
+    <h3>Adaptive Contrast & Background Colors</h3>
+    <label>
+        <input type="checkbox" id="toggleAdaptiveColors"> Enable Adaptive Contrast
+    </label>
+    <br>
+    <label>
+        Text Color: <input type="color" id="textColorPicker">
+    </label>
+    <br>
+    <label>
+        Background Color: <input type="color" id="bgColorPicker">
+    </label>
+
+    <hr>
+
+    <h3>Text-to-Speech</h3>
+    <label>
+        <input type="checkbox" id="toggleTTS"> Enable Text-to-Speech
+    </label>
+
+    <script src="popup.js"></script>
+</body>
+</html>
