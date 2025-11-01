@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroAdapt Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>NeuroAdapt</h2>
+
+    <label>
+        <input type="checkbox" id="toggleContentFilter"> Enable Content Filter
+    </label>    
+    <label>
+        <input type="checkbox" id="toggleFont"> Enable Dyslexia-Friendly Font
+    </label>
+    <label>
+        <input type="checkbox" id="toggleEmojis"> Add Emojis for Readability
+    </label>
+
+    <hr>
+
+    <h3>Adaptive Contrast & Background Colors</h3>
+    <label>
+        <input type="checkbox" id="toggleAdaptiveColors"> Enable Adaptive Contrast
+    </label>
+    <br>
+    <label>
+        Text Color: <input type="color" id="textColorPicker">
+    </label>
+    <br>
+    <label>
+        Background Color: <input type="color" id="bgColorPicker">
+    </label>
+
+    <hr>
+
+    <h3>Text-to-Speech</h3>
+    <label>
+        <input type="checkbox" id="toggleTTS"> Enable Text-to-Speech
+    </label>
+
+    <hr>
+
+    <h3>Ambient Music</h3>
+    <label for="musicDropdown">Select Ambient Music:</label>
+    <select id="musicDropdown">
+        <option value="">None</option>
+        <option value="white_noise">White Noise</option>
+        <option value="brown_noise">Brown Noise</option>
+        <option value="lofi">LoFi</option>
+    </select>
+    <button id="toggleMusic">Pause Music</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
