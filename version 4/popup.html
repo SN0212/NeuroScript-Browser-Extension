@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NeuroAdapt Settings</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h2>NeuroAdapt</h2>
+
+    <label>
+        <input type="checkbox" id="toggleContentFilter" /> Enable Content Filter
+    </label>
+    <label>
+        <input type="checkbox" id="toggleFont" /> Enable Dyslexia-Friendly Font
+    </label>
+    <label>
+        <input type="checkbox" id="toggleEmojis" /> Add Emojis for Readability
+    </label>
+
+    <hr />
+
+    <h3>Adaptive Contrast & Background Colors</h3>
+    <label>
+        <input type="checkbox" id="toggleAdaptiveColors" /> Enable Adaptive Contrast
+    </label>
+    <br />
+    <label>
+        Text Color: <input type="color" id="textColorPicker" />
+    </label>
+    <br />
+    <label>
+        Background Color: <input type="color" id="bgColorPicker" />
+    </label>
+
+    <hr />
+
+    <h3>Text-to-Speech</h3>
+    <label>
+        <input type="checkbox" id="toggleTTS" /> Enable Text-to-Speech
+    </label>
+
+    <hr />
+
+    <h3>Ambient Music</h3>
+    <label for="musicDropdown">Select Ambient Music:</label>
+    <select id="musicDropdown">
+        <option value="">None</option>
+        <option value="white_noise">White Noise</option>
+        <option value="brown_noise">Brown Noise</option>
+        <option value="lofi">LoFi</option>
+    </select>
+    <button id="toggleMusic">Pause Music</button>
+
+    <hr />
+
+    <h3>Summarize Copied Text</h3>
+    <textarea id="inputText" rows="5" cols="50" placeholder="Paste text here to summarize..."></textarea>
+    <br />
+    <button id="summarizeBtn">Summarize</button>
+
+    <h4>Summary:</h4>
+    <div id="summaryOutput" style="white-space: pre-wrap; border: 1px solid #ccc; padding: 10px; min-height: 50px;"></div>
+
+    <!-- Puter.js for easy AI integration -->
+    <script src="https://js.puter.com/v2/"></script>
+
+    <script src="popup.js"></script>
+</body>
+</html>
